@@ -6,12 +6,14 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String convertToUpperCase(String data) {
-        throw new UnsupportedOperationException();
+
+        return data.toUpperCase();
     }
 
     @Override
     protected String convertToLowerCase(String data) {
-        throw new UnsupportedOperationException();
+
+        return data.toLowerCase();
     }
 
     @Override
@@ -26,27 +28,32 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected int Determine_The_Length_Of_A_String(String data) {
-        throw new UnsupportedOperationException();
+
+        return data.length();
     }
 
     @Override
     protected String Remove_All_Leading_Whitespace(String data) {
-        throw new UnsupportedOperationException();
+
+        return data.stripLeading();
     }
 
     @Override
     protected String Remove_All_Trailing_Whitespace(String data) {
-        throw new UnsupportedOperationException();
+
+        return data.stripTrailing();
     }
 
     @Override
     protected String[] Split_A_String_Into_An_Array(String input, char divider) {
-        throw new UnsupportedOperationException();
+
+        return input.split();
     }
 
     @Override
     protected String Join_An_Array_Into_A_String(String[] input, String divider) {
-        throw new UnsupportedOperationException();
+
+        return String.join();
     }
 
     @Override
@@ -66,11 +73,12 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected boolean returnTrueIsAEndsWithB(String a, String b) {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException()                   ;
     }
 
     @Override
     protected String returnTheFourthThroughSeventhCharactersOfInput(String input) {
-        throw new UnsupportedOperationException();
+
+        return input.substring(4, 7);
     }
 }
