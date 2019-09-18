@@ -48,7 +48,7 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected String joinAnArrayIntoAString(String[] input, String divider) {
-        return String.join(divider, input);
+        return String.join(divider, input) ;
     }
 
     @Override
@@ -63,12 +63,12 @@ public class StringKihon extends StringKihonBase {
 
     @Override
     protected boolean returnTrueIfAStartsWithB(String a, String b) {
-        return a.startsWith(b);
+        return a.startsWith(b) ;
     }
 
     @Override
     protected boolean returnTrueIsAEndsWithB(String a, String b) {
-        return a.endsWith(b);
+        return a.endsWith(b) ;
     }
 
     @Override
