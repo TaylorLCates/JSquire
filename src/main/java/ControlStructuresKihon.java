@@ -6,26 +6,36 @@ import java.util.Collection;
 public class ControlStructuresKihon extends ControlStructuresKihonBase {
     @Override
     protected void callHitOnAIfValIsTrueElseCallHitOnB(boolean val, Target a, Target b) {
-        throw new UnsupportedOperationException();
+        if (val) {
+            a.hit();
+        } else b.hit();
     }
 
     @Override
     protected void callHitOnAOnceForEachMemberOfList(Target a, Collection<String> list) {
-        throw new UnsupportedOperationException();
+        for (String b : list) {
+            a.hit();
+        }
     }
 
     @Override
     protected void callHitOnAWhileAIsValidIsTrue(Target a) {
-        throw new UnsupportedOperationException();
+        while (a.getIsValid()) {
+            a.hit();
+        }
     }
 
     @Override
     protected void nTimesCallHitOnA(int n, Target a) {
-        throw new UnsupportedOperationException();
+        for (int i = 0; i < n; i++) {
+            a.hit();
+        }
     }
 
     @Override
     protected void callHitOnAOnceAndLoopUntilIsValidIsFalse(Target a) {
-        throw new UnsupportedOperationException();
+        do {
+            a.hit();
+        } while (a.getIsValid());
     }
 }
