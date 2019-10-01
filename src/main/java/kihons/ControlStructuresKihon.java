@@ -9,26 +9,36 @@ import java.util.Collection;
 public class ControlStructuresKihon extends ControlStructuresKihonBase {
     @Override
     protected void callHitOnAIfValIsTrueElseCallHitOnB(boolean val, Target a, Target b) {
-        throw new NotImplementedYetException();
+        if (val) {
+            a.hit();
+        } else b.hit();
     }
 
     @Override
     protected void callHitOnAOnceForEachMemberOfList(Target a, Collection<String> list) {
-        throw new NotImplementedYetException();
+        for (String b : list) {
+            a.hit();
+        }
     }
 
     @Override
     protected void callHitOnAWhileAIsValidIsTrue(Target a) {
-        throw new NotImplementedYetException();
+        while (a.isValid()) {
+            a.hit();
+        }
     }
 
     @Override
     protected void nTimesCallHitOnA(int n, Target a) {
-        throw new NotImplementedYetException();
+        for (int i = 0; i < n; i++) {
+            a.hit();
+        }
     }
 
     @Override
     protected void callHitOnAOnceAndLoopUntilIsValidIsFalse(Target a) {
-        throw new NotImplementedYetException();
+        do {
+            a.hit();
+        } while (a.isValid());
     }
 }
